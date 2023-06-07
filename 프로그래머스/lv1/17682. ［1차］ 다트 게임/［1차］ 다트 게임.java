@@ -52,7 +52,7 @@ class Solution {
                 }
             } 
             else  continue;//숫자인경우
-        }// num값들을 set메소드를 이용해서 제곱 계산 결과로 바꿈. 이제 스타상 아차상 남음.
+        }// num값들을 set메소드를 이용해서 제곱 계산 결과로 바꿈.
         System.out.println(num);
         for(int i=0;i<num.size();i++) 
             answer += num.get(i);
