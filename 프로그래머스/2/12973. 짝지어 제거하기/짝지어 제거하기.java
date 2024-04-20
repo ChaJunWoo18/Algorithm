@@ -5,7 +5,6 @@ class Solution
     {
         Stack stack = new Stack();
         stack.push(s.charAt(0));
-        System.out.println(stack.peek());
         for(int i=1;i<s.length();i++) {
             char c = s.charAt(i);
             if(!stack.isEmpty() && stack.peek()==c){
