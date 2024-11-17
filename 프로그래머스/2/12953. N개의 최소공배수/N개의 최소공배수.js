@@ -1,17 +1,16 @@
 function solution(arr) {
     var answer = 0;
-    function gcd(a, b) {
+    function gcd(a,b) { //최대공약수
         while(b!==0) {
             const tmp = b;
-            b=a%b;
-            a=tmp;
+            b = a % b 
+            a = tmp
         }
-        return a;
+        return a
     }
     function lcm(a,b) {
-        return a*b / gcd(a,b)
+       return a*b / gcd(a,b)
     }
-    return arr.reduce((a,b)=> lcm(a,b))
+    answer = arr.reduce((a,b)=> lcm(a,b))
+    return answer;
 }
-
-//최소공배수 : a*b / (a,b의 최대공약수)
