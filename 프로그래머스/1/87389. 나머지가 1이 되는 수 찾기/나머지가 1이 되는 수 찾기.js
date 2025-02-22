@@ -6,5 +6,4 @@ function solution(n) {
             return x;
         }
     }
-    return answer;
 }
